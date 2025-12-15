@@ -304,7 +304,6 @@ A correlation rule was created to alert whenever a new domain user (EventCode 47
 
 Here’s the **clean, correct rewrite mapped to T1059 (Command and Scripting Interpreter)**. This aligns better with PowerShell execution and avoids the PsExec/lateral-movement mismatch. No fluff.
 
-````md
 ### 5.2 Scenario 2 — Command Execution: PowerShell (T1059.001)
 
 #### Attack Steps
@@ -316,9 +315,8 @@ Here’s the **clean, correct rewrite mapped to T1059 (Command and Scripting Int
 **Command Run (Simplified):**
 
 ```powershell
-Invoke-AtomicTest T1059.001 -TestNum 1
+Invoke-AtomicTest T1059.001
 ```
-````
 
 #### Attack Execution Evidence
 
