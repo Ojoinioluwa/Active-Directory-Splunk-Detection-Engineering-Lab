@@ -1,4 +1,4 @@
-# 🧪 Cybersecurity Home Lab Project: Active Directory & Splunk Detection Engineering
+# 🧪 Home Lab Project: Active Directory & Splunk Detection Engineering
 
 ---
 
@@ -55,33 +55,33 @@ This section provides proof that the lab environment exists, is isolated, and is
 
 **Network Diagram**
 
-![Network Diagram Overview](screenshots/Active-directory-project.drawio.png)
+<img width="500" height="250" alt="image" src="./Screenshots/Active-directory-project.drawio.png" />
 
 **Hypervisor Overview (VirtualBox)**
 
-![Hypervisor Overview](screenshots/Virtual-box-images-running.png)
+<img width="500" height="250" alt="image" src="./screenshots/Virtual-box-images-running.png" />
 
 **VM Network Adapter Settings**
 
-![Hypervisor Overview](screenshots/VM-Network-Adapter-Settings.png)
+<img width="500" height="250" alt="image" src="./screenshots/VM-Network-Adapter-Settings.png" />
 
 **System Uptime Proof (Domain Controller)**
 
 The following screenshot shows sustained uptime on the Domain Controller, demonstrating system stability and continuous operation during lab activity.
 
-![DC Task Manager uptime](screenshots/dc-taskmanager-uptime.png)
+<img width="500" height="250" alt="image" src="./screenshots/dc-taskmanager-uptime.png" />
 
 **DNS Resolution Proof**
 
-![Hypervisor Overview](screenshots/nslookup-dns-overview2.png)
+<img width="500" height="250" alt="image" src="./screenshots/nslookup-dns-overview2.png" />
 
 **IP Configuration (DC)**
 
-![Hypervisor Overview](screenshots/IP-Configuration-DC.png)
+<img width="500" height="250" alt="image" src="./screenshots/IP-Configuration-DC.png" />
 
 **Ping Test**
 
-![Ping Test](screenshots/ping-splunk-server.png)
+<img width="500" height="250" alt="image" src="./screenshots/ping-splunk-server.png" />
 
 ---
 
@@ -208,19 +208,17 @@ The evidence in this section confirms that directory services, audit policies, a
 
 #### AD DS Confirmation (Active Directory Maturity)
 
-![AD DS](screenshots/aduc-domain-objects.png)
-
----
+## <img width="500" height="250" alt="image" src="./screenshots/aduc-domain-objects.png" />
 
 #### GPO Link Confirmation
 
-![AD DS](screenshots/gpmc-gpo-linked-domain.png)
+<img width="500" height="250" alt="image" src="./screenshots/gpmc-gpo-linked-domain.png" />
 
 ---
 
 #### Sysmon Configuration Loaded (Forensic Credibility)
 
-![AD DS](screenshots/sysmon-service-and-events.png)
+<img width="500" height="250" alt="image" src="./screenshots/sysmon-service-and-events.png" />
 
 ---
 
@@ -237,13 +235,13 @@ Splunk Web UI displaying:
 
 #### Splunk Forwarder Status (Ingestion Proof)
 
-![Splunk Data Ingestion](screenshots/splunk-forward-data.png)
+<img width="500" height="250" alt="image" src="./screenshots/splunk-forward-data.png" />
 
 ---
 
 #### Splunk Data Ingestion
 
-![Splunk Data Ingestion](screenshots/splunk-log-ingestion-proof.png)
+<img width="500" height="250" alt="image" src="./screenshots/splunk-log-ingestion-proof.png" />
 
 ---
 
@@ -271,7 +269,7 @@ The screenshots in this subsection document the deliberate execution of a domain
 
 **Command Line Execution:**
 
-![Splunk Data Ingestion](screenshots/LocalAccount-Atomic.png)
+<img width="500" height="250" alt="image" src="./screenshots/LocalAccount-Atomic.png" />
 
 #### Detection & Analysis Evidence
 
@@ -296,11 +294,11 @@ A correlation rule was created to alert whenever a new domain user (EventCode 47
 
 **Timeline Correlation:**
 
-![Splunk Data Ingestion](screenshots/NewLocalUser-splunkCheck.png)
+<img width="500" height="250" alt="image" src="./screenshots/NewLocalUser-splunkCheck.png" />
 
 **Raw Event View:**
 
-![Splunk Data Ingestion](screenshots/splunk-localuser4720-raw.png)
+<img width="500" height="250" alt="image" src="./screenshots/splunk-localuser4720-raw.png" />
 
 ---
 
@@ -329,7 +327,7 @@ The screenshots in this subsection demonstrate successful execution of PowerShel
 
 **PowerShell Test Output:**
 
-![PowerShell Test](/Screenshots/POWERSHELL-splunk.png)
+<img width="500" height="250" alt="image" src="./screenshots/POWERSHELL-splunk.png" />
 
 ---
 
@@ -357,6 +355,7 @@ The query reveals anomalous PowerShell execution originating from the Windows 10
 Alert on Sysmon Event ID 1 where `powershell.exe` is executed with encoded commands, suspicious flags (e.g., `-EncodedCommand`, `-nop`, `-w hidden`), or from non-standard parent processes.
 
 **Query Result (Process Tree View):**
-![PowerShell Test](/Screenshots/powershel-stats-splunk.png)
+
+<img width="500" height="250" alt="image" src="./screenshots/powershel-stats-splunk.png" />
 
 ---
