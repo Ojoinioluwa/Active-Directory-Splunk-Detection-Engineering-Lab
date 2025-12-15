@@ -59,29 +59,29 @@ This section provides proof that the lab environment exists, is isolated, and is
 
 **Hypervisor Overview (VirtualBox)**
 
-<img width="500" height="250" alt="image" src="./screenshots/Virtual-box-images-running.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/Virtual-box-images-running.png" />
 
 **VM Network Adapter Settings**
 
-<img width="500" height="250" alt="image" src="./screenshots/VM-Network-Adapter-Settings.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/VM-Network-Adapter-Settings.png" />
 
 **System Uptime Proof (Domain Controller)**
 
 The following screenshot shows sustained uptime on the Domain Controller, demonstrating system stability and continuous operation during lab activity.
 
-<img width="500" height="250" alt="image" src="./screenshots/dc-taskmanager-uptime.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/dc-taskmanager-uptime.png" />
 
 **DNS Resolution Proof**
 
-<img width="500" height="250" alt="image" src="./screenshots/nslookup-dns-overview2.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/nslookup-dns-overview2.png" />
 
 **IP Configuration (DC)**
 
-<img width="500" height="250" alt="image" src="./screenshots/IP-Configuration-DC.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/IP-Configuration-DC.png" />
 
 **Ping Test**
 
-<img width="500" height="250" alt="image" src="./screenshots/ping-splunk-server.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/ping-splunk-server.png" />
 
 ---
 
@@ -208,17 +208,17 @@ The evidence in this section confirms that directory services, audit policies, a
 
 #### AD DS Confirmation (Active Directory Maturity)
 
-## <img width="500" height="250" alt="image" src="./screenshots/aduc-domain-objects.png" />
+## <img width="500" height="250" alt="image" src="./Screenshots/aduc-domain-objects.png" />
 
 #### GPO Link Confirmation
 
-<img width="500" height="250" alt="image" src="./screenshots/gpmc-gpo-linked-domain.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/gpmc-gpo-linked-domain.png" />
 
 ---
 
 #### Sysmon Configuration Loaded (Forensic Credibility)
 
-<img width="500" height="250" alt="image" src="./screenshots/sysmon-service-and-events.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/sysmon-service-and-events.png" />
 
 ---
 
@@ -235,13 +235,13 @@ Splunk Web UI displaying:
 
 #### Splunk Forwarder Status (Ingestion Proof)
 
-<img width="500" height="250" alt="image" src="./screenshots/splunk-forward-data.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/splunk-forward-data.png" />
 
 ---
 
 #### Splunk Data Ingestion
 
-<img width="500" height="250" alt="image" src="./screenshots/splunk-log-ingestion-proof.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/splunk-log-ingestion-proof.png" />
 
 ---
 
@@ -265,11 +265,11 @@ Invoke-AtomicTest T1136.001
 #### Attack Execution Evidence
 
 **Purpose Statement:**
-The screenshots in this subsection document the deliberate execution of a domain persistence technique from a non-authoritative host, establishing the initial adversary action.
+The Screenshots in this subsection document the deliberate execution of a domain persistence technique from a non-authoritative host, establishing the initial adversary action.
 
 **Command Line Execution:**
 
-<img width="500" height="250" alt="image" src="./screenshots/LocalAccount-Atomic.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/LocalAccount-Atomic.png" />
 
 #### Detection & Analysis Evidence
 
@@ -294,11 +294,11 @@ A correlation rule was created to alert whenever a new domain user (EventCode 47
 
 **Timeline Correlation:**
 
-<img width="500" height="250" alt="image" src="./screenshots/NewLocalUser-splunkCheck.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/NewLocalUser-splunkCheck.png" />
 
 **Raw Event View:**
 
-<img width="500" height="250" alt="image" src="./screenshots/splunk-localuser4720-raw.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/splunk-localuser4720-raw.png" />
 
 ---
 
@@ -327,7 +327,7 @@ The screenshots in this subsection demonstrate successful execution of PowerShel
 
 **PowerShell Test Output:**
 
-<img width="500" height="250" alt="image" src="./screenshots/POWERSHELL-splunk.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/POWERSHELL-splunk.png" />
 
 ---
 
@@ -356,6 +356,6 @@ Alert on Sysmon Event ID 1 where `powershell.exe` is executed with encoded comma
 
 **Query Result (Process Tree View):**
 
-<img width="500" height="250" alt="image" src="./screenshots/powershel-stats-splunk.png" />
+<img width="500" height="250" alt="image" src="./Screenshots/powershel-stats-splunk.png" />
 
 ---
